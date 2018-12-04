@@ -26,7 +26,7 @@
                 {{$submenu->name }}
             </td>
             <td>
-                    {{$submenu->main_menu_id }}
+                    {{$submenu->main_menus_id }}
                 </td>
             <td>
               @if($submenu->status=='1')

@@ -53,7 +53,7 @@ class SubMenuController extends Controller
             'sub_menu_name'=>'required'
         ]);
         $submenu = new SubMenu();
-        $submenu->main_menu_id = $request->mainmenu;
+        $submenu->main_menus_id = $request->mainmenu;
         $submenu->name = $request->sub_menu_name;
         $submenu->status = $request->status;
         $submenu->save();

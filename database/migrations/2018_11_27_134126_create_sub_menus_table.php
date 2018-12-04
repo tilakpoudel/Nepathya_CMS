@@ -17,6 +17,8 @@ class CreateSubMenusTable extends Migration
             $table->increments('id');
             $table->integer('main_menu_id');
             $table->string('sub_menu_name');
+            $table->boolean('status');
+
             $table->timestamps();
         });
     }

@@ -27,7 +27,7 @@
                 </a>
               
                 @foreach ($submenus as $submenu)
-                    @if ($submenu->main_menu_id == $mainmenu->id)
+                    @if ($submenu->main_menus_id == $mainmenu->id)
 
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           {{-- <li class="dropdown-item">{{$submenu->name}}</li> --}}
