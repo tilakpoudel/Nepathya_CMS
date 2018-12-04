@@ -98,7 +98,7 @@ class MainMenuController extends Controller
         // dd($mainmenu->name);
       $mainmenu->save();
 
-      Session::flash('success','You have successfully edited category');
+      Session::flash('success','You have successfully edited Main menu');
 
       return redirect()->route('mainmenu.view');
     }
