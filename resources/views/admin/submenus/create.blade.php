@@ -17,7 +17,7 @@
                     <select class="form-control" name="mainmenu" id="mainmenu">
                             
                              @foreach($mainmenus as $mainmenu)
-                              <option value="{{$mainmenu->id}}">{{$mainmenu->name}}</option>
+                              <option value="{{$mainmenu->id}}">{{$mainmenu->menu_name}}</option>
                             @endforeach
                  
                           </select>

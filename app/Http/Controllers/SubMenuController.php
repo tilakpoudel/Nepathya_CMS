@@ -110,7 +110,7 @@ class SubMenuController extends Controller
     {
         //
         $submenu = SubMenu::find($id);
-        $submenu->main_menu_id = $request->mainmenu;
+        $submenu->main_menus_id = $request->mainmenu;
         $submenu->name = $request->sub_menu_name;
         $submenu->status = $request->status;
           // dd($mainmenu->name);

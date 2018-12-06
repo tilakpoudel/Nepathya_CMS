@@ -5,7 +5,7 @@
    @include('admin.includes.errors')   
  
         <div class="panel-heading">
-          <h3>Edit Main Menu: {{$mainmenu->name}} </h3>
+          <h3>Edit Main Menu: {{$mainmenu->menu_name}} </h3>
         </div>
     
         <div class="panel-body">
@@ -16,7 +16,7 @@
     
             <div class="form-group">
               <strong><label for="main_menu_name">Main Menu Name</label></strong>
-              <input type="text" name="main_menu_name" class="form-control" value="{{$mainmenu->name}}">
+              <input type="text" name="main_menu_name" class="form-control" value="{{$mainmenu->menu_name}}">
             </div>
     
             <div class="form-group">
