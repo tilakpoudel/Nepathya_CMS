@@ -26,7 +26,7 @@
                 {{$submenu->name }}
             </td>
             <td>
-                    {{$submenu->main_menus_id }}
+              <span class="badge badge-secondary">{{$submenu->menu_name }}</span>
                 </td>
             <td>
               @if($submenu->status=='1')

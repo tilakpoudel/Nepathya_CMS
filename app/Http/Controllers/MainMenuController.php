@@ -46,7 +46,7 @@ class MainMenuController extends Controller
        
         $mainmenu = new MainMenu();
 
-        $mainmenu->name = $request->main_menu_name;
+        $mainmenu->menu_name = $request->main_menu_name;
         $mainmenu->status = $request->status;
         $mainmenu->save();
         // echo("category created");
@@ -93,7 +93,7 @@ class MainMenuController extends Controller
         // dd($request->all());
         $mainmenu = MainMenu::find($id);
 
-      $mainmenu->name = $request->main_menu_name;
+      $mainmenu->menu_name = $request->main_menu_name;
       $mainmenu->status = $request->status;
         // dd($mainmenu->name);
       $mainmenu->save();

@@ -23,7 +23,7 @@
           @foreach ($mainmenus as $mainmenu)
           <li class="nav-item dropdown" style="float:right">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {{$mainmenu->name}}
+                  {{$mainmenu->menu_name}}
                 </a>
               
                 @foreach ($submenus as $submenu)
@@ -32,7 +32,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           {{-- <li class="dropdown-item">{{$submenu->name}}</li> --}}
                                 <a class="dropdown-item" href="#">{{$submenu->name}}</a>
-        
+
                       </div>
                     
                     @endif
@@ -40,8 +40,8 @@
                              
               </li>
               
-          @endforeach
-        
+          @endforeach 
+          
        
         
       </ul>

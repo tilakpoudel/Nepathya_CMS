@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\MainMenu;
 use App\SubMenu;
 use Session;
+use DB;
 
 class SubMenuController extends Controller
 {
@@ -16,7 +17,16 @@ class SubMenuController extends Controller
      */
     public function index()
     {
-        return view('admin.submenus.submenuindex')->with('submenus',SubMenu::all());
+        $submenus = DB::table('main_menus')
+            ->join('sub_menus', 'main_menus.id', '=', 'sub_menus.main_menus_id')
+            ->select('main_menus.menu_name', 'sub_menus.*')
+            ->get();
+            
+            // echo"<pre>";
+            // print_r($submenus);
+            // echo"</pre>";
+            return view('admin.submenus.submenuindex')->with('submenus',$submenus);
+
     }
 
     /**

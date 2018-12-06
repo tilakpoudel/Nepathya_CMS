@@ -21,7 +21,7 @@
         @foreach($mainmenus as $mainmenu)
           <tr>
             <td>
-                {{$mainmenu->name }}
+                {{$mainmenu->menu_name }}
             </td>
             <td>
               @if($mainmenu->status=='1')
