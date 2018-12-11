@@ -70,5 +70,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
         'uses'=>'TeacherController@create',
         'as'=>'teacher.create'
     ]);
+    Route::post('/teacher/store/',[
+        'uses'=>'TeacherController@store',
+        'as'=>'teacher.store'
+    ]);
 });
 
