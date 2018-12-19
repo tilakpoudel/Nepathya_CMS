@@ -37,12 +37,25 @@
             <div class="row">
                 <div class="form-group col-md-6">
                     <strong><label for="image">Image</label></strong>
-                    <input type="file" name="teacher_image" id="teacher_image" required class="form-control">
+                    <input type="file" name="teacher_image" id="teacher_image" class="form-control" accept="image/*" onchange="loadFile(event)">
                 </div>
-                <div class="form-group col-md-6">
-                    Image
+                <div class="form-group col-md-6" >
+                    <img id="preview_image" height="100px" width="100px" alt="Teachers Image" />
                 </div>
+                <script>
+                        var loadFile = function(event) {
+                          var output = document.getElementById('preview_image');
+                          output.src = URL.createObjectURL(event.target.files[0]);
+                        };
+                    </script>
             </div>
+            <div class="row">
+                    <div class="form-group col-md-12">
+                        <strong><label for="image">Description</label></strong>
+                        <textarea class="form-control" id="ckeditor" placeholder="Enter description of teacher"></textarea>
+                    </div>
+                    
+                </div>
             <div class="row">
                 <div class="form-group col-md-6">
                     <strong><label for="status">Status</label></strong>
@@ -66,5 +79,5 @@
           </form>
         </div>
       </div>
-
+     
 @endsection

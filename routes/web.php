@@ -74,5 +74,6 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
         'uses'=>'TeacherController@store',
         'as'=>'teacher.store'
     ]);
+    // Route::Resource('teacher','TeacherController');
 });
 

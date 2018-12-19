@@ -17,7 +17,7 @@
     {{-- <script src="{{asset('bootstrap/css/bootstrap.min.css')}}"></script>
     <script src="{{asset('bootstrap/css/bootstrap.min.js')}}"></script> --}}
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <link rel="stylesheet" href="{{asset('css/toastr.min.css')}}">
 
 
@@ -137,14 +137,18 @@
     </div>
 
     <script src="{{ asset('jquery/jquery-3.3.1.min.js')}}"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script  type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     <script src="{{asset('js/toastr.min.js')}}"></script>
 
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"> -->
 
+        <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+
+        <script>
+            CKEDITOR.replace('ckeditor');
+        </script>
+    
     <script type="text/javascript">
-
-
       @if(Session::has('success'))
       //alert("{{Session::get('success')}}");
         toastr.success('{{Session::get('success')}}');

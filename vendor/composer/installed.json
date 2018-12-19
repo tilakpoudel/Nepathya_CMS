@@ -4157,6 +4157,62 @@
         "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles"
     },
     {
+        "name": "unisharp/laravel-ckeditor",
+        "version": "4.7.2",
+        "version_normalized": "4.7.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/UniSharp/laravel-ckeditor.git",
+            "reference": "5c75f3f9128ec8567955913074795deee5869c5c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/UniSharp/laravel-ckeditor/zipball/5c75f3f9128ec8567955913074795deee5869c5c",
+            "reference": "5c75f3f9128ec8567955913074795deee5869c5c",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~5.0"
+        },
+        "time": "2017-11-01T04:33:40+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Unisharp\\Ckeditor\\": "./"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+",
+            "LGPL-2.1+",
+            "MPL-1.1+"
+        ],
+        "authors": [
+            {
+                "name": "CKSource",
+                "homepage": "http://cksource.com"
+            },
+            {
+                "name": "UniSharp Ltd. (Composer Package Maintainer)",
+                "homepage": "http://www.unisharp.com"
+            }
+        ],
+        "description": "JavaScript WYSIWYG web text editor (for laravel).",
+        "homepage": "http://ckeditor.com",
+        "keywords": [
+            "CKEditor",
+            "editor",
+            "fckeditor",
+            "html",
+            "javascript",
+            "laravel",
+            "richtext",
+            "text",
+            "wysiwyg"
+        ]
+    },
+    {
         "name": "vlucas/phpdotenv",
         "version": "v2.5.1",
         "version_normalized": "2.5.1.0",
